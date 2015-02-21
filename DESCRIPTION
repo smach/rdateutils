@@ -6,6 +6,7 @@ Date: 2015-02-21
 Author: c(
     person("Sharon", "Machlis", , "smachlis@computerworld.com", c("aut", "cre")),
     )
-Description: This package creates date and string objects for common relative dates such as yesterday.date(), yesterday.string(), etc.
+Description: This package creates date and string objects for common dates relative to the current date such as yesterday.date(), yesterday.string(), etc.
 License: GPL-3
 LazyData: TRUE
+URL: http://github.com/smach/rdateutils
