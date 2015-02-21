@@ -1,0 +1,11 @@
+Package: rdateutils
+Type: Package
+Title: Simple Date Utilities
+Version: 0.1
+Date: 2015-02-21
+Author: c(
+    person("Sharon", "Machlis", , "smachlis@computerworld.com", c("aut", "cre")),
+    )
+Description: This package creates date and string objects for common relative dates such as yesterday.date(), yesterday.string(), etc.
+License: GPL-3
+LazyData: TRUE
