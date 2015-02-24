@@ -247,11 +247,11 @@ end.of.last.week.str <- function(){
 
 #' start.of.this.week.date()
 #'
-#' This function generates the date of the Monday of this week as a date object
+#' This function generates the date of Monday of this week as a date object
 #' @examples
-#' start.of.last.week.date()
+#' start.of.this.week.date()
 #'
-start.of.last.week.date <- function(){
+start.of.this.week.date <- function(){
   Today.Date <- Sys.Date()
   dayofweek <- format(Today.Date, "%A")
   lastweekstart <- switch(dayofweek,
@@ -265,11 +265,11 @@ start.of.last.week.date <- function(){
                           )
 }
 
-#' start.of.last.week.str()
+#' start.of.this.week.str()
 #'
-#' This function generates the date of the Monday of last week as a character string
+#' This function generates the date of Monday of this week as a character string
 #' @examples
-#' start.of.last.week.str()
+#' start.of.this.week.str()
 #'
 start.of.this.week.str <- function(){
   Today.Date <- Sys.Date()

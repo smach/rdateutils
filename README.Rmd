@@ -1,3 +1,10 @@
+---
+title: "rdateutils"
+author: "Sharon Machlis"
+output:
+  md_document:
+    variant: markdown_github
+---
 
 # rdateutils
 
