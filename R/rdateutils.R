@@ -254,7 +254,7 @@ end.of.last.week.str <- function(){
 start.of.this.week.date <- function(){
   Today.Date <- Sys.Date()
   dayofweek <- format(Today.Date, "%A")
-  lastweekstart <- switch(dayofweek,
+  thisweekstart <- switch(dayofweek,
                           "Monday" = Today.Date,
                           "Tuesday" = Today.Date -1,
                           "Wednesday" = Today.Date - 2,
@@ -274,7 +274,7 @@ start.of.this.week.date <- function(){
 start.of.this.week.str <- function(){
   Today.Date <- Sys.Date()
   dayofweek <- format(Today.Date, "%A")
-  lastweekstart <- switch(dayofweek,
+  thisweekstart <- switch(dayofweek,
                           "Monday" = as.character(Today.Date),
                           "Tuesday" = as.character(Today.Date -1),
                           "Wednesday" = as.character(Today.Date - 2),
