@@ -14,6 +14,7 @@ Available functions include yesterday.date(), yesterday.str(), first.of.last.mon
 
 To install, you need to have the devtools package on your system (if you don't have it, install that with install.packages("devtools") ) and then run
 
-```{r, eval = FALSE}
-devtools::install_github("smach/rdateutils.R")
+
+```r
+devtools::install.github("smach/rdateutils.R")
 ```
