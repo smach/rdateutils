@@ -17,3 +17,9 @@ To install, you need to have the devtools package on your system (if you don't h
 ```{r, eval = FALSE}
 devtools::install_github("smach/rdateutils.R")
 ```
+
+To see a list of function and links to their help files, run
+
+```{r, eval = FALSE}
+help(package = "rdateutils")
+```
