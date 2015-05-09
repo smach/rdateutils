@@ -102,6 +102,32 @@ end.of.last.month.date <- function(){
 }
 
 
+#' end.of.month.from.datestring(mydate)
+#'
+#' This function generates the last day of a month from a character string in format yyyy-mm-dd and returns a character string with the end of that month
+#' @param mydate A date as character string in yyyy-mm-dd format
+#' @examples
+#' end.of.month.from.date("2015-05-01")
+end.of.month.from.datestring <- function(mydate){
+  mydate <- as.Date(mydate)
+  mymonth <- format(mydate, "%m")
+  myyear <- format(mydate, "%Y")
+  mynextmonthnum <- as.numeric(mymonth) + 1
+  if(mynextmonthnum > 9){
+    mynextmonth <- as.character(mynextmonthnum)
+  } else {
+    mynextmonth <- paste0("0", as.character(mynextmonthnum))
+  }
+  firstnextmonth <- as.Date(paste(myyear, mynextmonth, "01", sep="-"))
+  endmonth <- firstnextmonth - 1
+  endmonth <- as.character(endmonth)
+  return(endmonth)
+}
+
+
+
+
+
 #' end.of.last.month.str()
 #'
 #' This function generates the last day of the prior month as a character string
